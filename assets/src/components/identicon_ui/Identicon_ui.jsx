@@ -1,6 +1,7 @@
 import React from 'react'
 import '../portfolio/portfolio.css'
 import { useState } from 'react';
+
 import Identicon from '../../../../identicon';
 import axios from 'axios';
 
@@ -9,9 +10,11 @@ function Identicon_ui() {
   const [identicon, setIdenticon] = useState(null);
   const [errorMessage, setErrorMessage] = useState('');
 
+
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -26,6 +29,7 @@ function Identicon_ui() {
 
   const handleSave = () => {
     const link = document.createElement('a');
+
     link.download = `${name}_identicon.png`;
     link.href = identicon;
     document.body.appendChild(link);

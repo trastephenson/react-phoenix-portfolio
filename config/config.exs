@@ -39,7 +39,9 @@ config :phoenix, :json_library, Jason
 
 #  Configures identicon app
 config :identicon,
+
   binary: "./identicon",
+
   block_size: 8,
   error_correction_level: :h
 
