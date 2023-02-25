@@ -1,28 +1,35 @@
 import React from 'react'
 import '../portfolio/portfolio.css'
 import { useState } from 'react';
-import Identicon from '../../../../lib/identicon';
+
+import Identicon from '../../../../identicon';
+import axios from 'axios';
 
 function Identicon_ui() {
-   const [name, setName] = useState("");
+  const [name, setName] = useState('');
   const [identicon, setIdenticon] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
+
 
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    fetch(`/api/identicon/${name}`)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const objectURL = URL.createObjectURL(blob);
-        setIdenticon(objectURL);
-      });
+    try {
+      const response = await axios.post('/api/identicon', { name: name });
+      setIdenticon(response.data);
+      setErrorMessage('');
+    } catch (error) {
+      setErrorMessage('An error occurred while generating the Identicon. Please try again later.');
+    }
   };
 
   const handleSave = () => {
-    const link = document.createElement("a");
+    const link = document.createElement('a');
+
     link.download = `${name}_identicon.png`;
     link.href = identicon;
     document.body.appendChild(link);

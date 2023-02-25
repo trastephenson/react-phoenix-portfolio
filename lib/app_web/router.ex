@@ -8,8 +8,11 @@ defmodule AppWeb.Router do
   scope "/api", AppWeb do
     pipe_through :api
 
-    get "/identicons/:name", IdenticonController, :show
-    
+    get "/", IdenticonController, :index
+    get "/identicon/:name", IdenticonController, :show
+    post "/identicon", IdenticonController, :generate
+
+
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
