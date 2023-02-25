@@ -10,4 +10,7 @@
         "jakebecker.elixir-ls",
         "phoenixframework.phoenix"
     ],
+    "remoteEnv": {
+        "ERL_AFLAGS": "-kernel shell_history  enabled"
+    }
 }
