@@ -15,103 +15,109 @@ const Services = () => {
           </div>
 
           <ul className='service__list'>
+            
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>UI Design</p>
+            </li>
+          
+            <li>
+              <FaToolbox className='service__list-icon' />
+              <p>Wireframing and Prototyping</p>
+            </li>
+           
+            <li>
+              <FaToolbox className='service__list-icon' />
+              <p>Accessibility design</p>
             </li>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Usability Testing</p>
             </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
+
           </ul>
         </article>
        
         <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Software Development</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Full-stack Web Development</p>
             </li>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Mobile App Development</p>
             </li>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Cloud Computing Solutions</p>
             </li>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Custom Software Development</p>
             </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
+       
           </ul>
         </article>
        
         <article className="service">
           <div className="service__head">
-            <h3>Content Creation</h3>
+            <h3>Project Management</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Project Planning and Scoping</p>
             </li>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Agile Project Management</p>
             </li>
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Risk Management</p>
             </li>
+          
             <li>
               <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Stakeholder Communication</p>
             </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <FaToolbox className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-          </ul>
-        </article>
         
+          </ul>
+        </article>
+        <article className="service">
+          <div className="service__head">
+            <h3>Product Management</h3>
+          </div>
+
+          <ul className='service__list'>
+            
+            <li>
+              <FaToolbox className='service__list-icon' />
+              <p>Product Strategy and Roadmapping</p>
+            </li>
+          
+            <li>
+              <FaToolbox className='service__list-icon' />
+              <p>Market and Customer Research</p>
+            </li>
+           
+            <li>
+              <FaToolbox className='service__list-icon' />
+              <p>Product Design and Development</p>
+            </li>
+            <li>
+              <FaToolbox className='service__list-icon' />
+              <p>Product Analytics and Optimization</p>
+            </li>
+
+          </ul>
+        </article>
       </div>
     </section>
   )

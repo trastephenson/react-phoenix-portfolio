@@ -98,7 +98,58 @@ const Experience = () => {
             </article>
           </div>
         </div>
-      </div>
+
+        
+        <div className="experience__pm">
+          <h3>Project Management</h3>
+          <div className="experience__content">
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Agile Project Management</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Jira</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Adaptability and Problem-Solving</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Time Management</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Quality Management</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Conflict Resolution</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        </div>
+      
     </section>
   )
 }

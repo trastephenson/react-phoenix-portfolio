@@ -1,6 +1,6 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/ciri.png'
+ import IMG1 from '../../assets/oil life.gif'
 import IMG2 from '../../assets/ciri.png'
 import IMG3 from '../../assets/portfolio3.gif'
 import IMG4 from '../../assets/ciri.png'
@@ -13,7 +13,7 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
+    title: 'The Essential Life App Update',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
@@ -71,8 +71,9 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className='btn' target='_blank'>Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+              <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+              <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Try It Out</a>
+
               </div>
             </article>
             )
