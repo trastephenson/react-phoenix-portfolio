@@ -45,6 +45,7 @@ defmodule App.MixProject do
       {:jason, "~> 1.2"},
 
       {:plug_cowboy, "~> 2.5"},
+
       {:identicon, "~> 0.1.0", path: "identicon"}
 
 

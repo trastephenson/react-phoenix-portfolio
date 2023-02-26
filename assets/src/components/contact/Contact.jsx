@@ -4,7 +4,7 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
-import telegram from '../../assets/telegram.png'
+
 
 const Contact = () => {
   const form = useRef();
@@ -36,10 +36,7 @@ const Contact = () => {
             <h5>Travis Stephenson</h5>
             <a href="https://m.me/travis.stephenson.9887" target="_blank">Send a message</a>
           </article>
-          <article className="contact__option">
-            <h4>Telegram</h4>
-            <img src={telegram} alt="telegram" />
-          </article>
+        
         </div>
         {/* END OF CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
