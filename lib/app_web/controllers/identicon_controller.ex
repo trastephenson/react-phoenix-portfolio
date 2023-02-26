@@ -20,5 +20,6 @@ defmodule AppWeb.IdenticonController do
     conn
     |> put_resp_content_type("image/png")
     |> send_resp(200, identicon)
+
   end
 end

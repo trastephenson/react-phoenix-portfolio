@@ -7,7 +7,9 @@ defmodule Identicon do
     |> filter_odd_squares
     |> build_pixel_map
     |> draw_image
-    |> to_data_url
+
+    |> save_image(input)
+
   end
 
   def save_image(image, input) do
@@ -15,18 +17,23 @@ defmodule Identicon do
   end
 
   def draw_image(%Identicon.Image{color: color, pixel_map: pixel_map}) do
+
     image = :egd.create(250, 250)
+
     fill = :egd.color(color)
 
     Enum.each pixel_map, fn({start, stop}) ->
       :egd.filledRectangle(image, start, stop, fill)
     end
 
-    :egd.render(image, :png)
+
+    :egd.render(image)
+
   end
 
   def build_pixel_map(%Identicon.Image{grid: grid} = image) do
-    pixel_map = Enum.map grid, fn({_code, index}) ->
+   pixel_map = Enum.map grid, fn({_code, index}) ->
+
       horizontal = rem(index, 5) * 50
       vertical = div(index, 5) * 50
 
@@ -78,29 +85,6 @@ defmodule Identicon do
     # hash = :crypto.hash(:md5, input)
     # :binary.bind_to_list(hash)
   end
-
-  def draw_image(%Identicon.Image{color: color, pixel_map: pixel_map}) do
-    image = :egd.create(250, 250)
-    fill = :egd.color(color)
-
-    Enum.each pixel_map, fn({start, stop}) ->
-      :egd.filledRectangle(image, start, stop, fill)
-    end
-
-    image
-  end
-
-  def to_data_url(image) do
-    image
-    |> draw_image()
-    |> :egd.render()
-    |> :egd.image_to_binary()
-    |> Base.encode64()
-    |> "data:image/png;base64," <> &1
-  end
-
-  Identicon.main("hello")
-|> Identicon.to_data_url()
 
 
 end
